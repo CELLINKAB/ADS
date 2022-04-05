@@ -32,7 +32,7 @@ option(ADSLIB_ONLY "Build only the ADS library, not examples or tests" OFF)
 
 add_subdirectory(AdsLib)
 
-if(${ADSLIB_ONLY} STREQUAL "OFF")
+if(${ADSLIB_ONLY} STREQUAL "ON")
     message(NOTICE "ADS: Not building tests and examples")
 else()
     add_subdirectory(AdsLibTest)
